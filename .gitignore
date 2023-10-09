@@ -1,0 +1,11 @@
+# Ignore everything in the root except the "dataset" directory
+*
+
+# Except this files and directories
+!.gitignore
+!dataset/
+!dataset/.gitkeep
+!classify_nuImages.py
+!README.md
+!LICENSE
+!requirements.txt
