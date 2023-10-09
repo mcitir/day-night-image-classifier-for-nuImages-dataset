@@ -1,3 +1,20 @@
+# Author: Muzaffer Citir, MSc RWTH Aachen University
+# Contact: https://www.linkedin.com/in/muzaffercitir/
+# Date created: 2023-10-09
+
+# This script is used to classify images in the nuImages dataset into daytime and nighttime images 
+# by using the hour information in the file names.
+
+# The script will create a new directory named 'classified_<date_time>' in the same directory as the script.
+# The classified images will be copied to this directory in two subdirectories named 'daytime' and 'nighttime', if COPY_TO_FULL is 'daynight'.
+# The classified images will be copied to this directory in 24 subdirectories named '00', '01', ..., '23', if COPY_TO_FULL is 'timeslots'.
+
+# The script will also create a subset directory named 'subset' in the same directory as the script.
+# The classified images will be copied to this directory in two subdirectories named 'daytime' and 'nighttime'
+# by predefined counts (IMAGE_SELECTION_COUNT_DAY and IMAGE_SELECTION_COUNT_NIGHT).
+
+# The script will also create a report file named 'report.md' in the same directory.
+
 import os
 import sys
 import random
